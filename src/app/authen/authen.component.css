@@ -1,0 +1,67 @@
+.parent-cover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.child-cover {
+  width: 100%;
+  height: 100%;
+  background-color: #12e193;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-title{
+  justify-content: center;
+  display: flex;
+  padding: 3%;
+}
+
+.general-cus{
+  justify-content: center;
+  display: flex;
+  padding: 0.9%;
+}
+
+.rideClass{
+  height: 30%;
+  width: 30%;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+}
+
+/* On screens that are 992px */
+@media screen and (max-width: 992px) {
+  .child-cover {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rideClass{
+    height: 30%;
+    width: 35%;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+  }
+}
+
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  .child-cover {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rideClass{
+    height: 35%;
+    width: 60%;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+  }
+}
