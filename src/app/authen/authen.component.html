@@ -1,14 +1,13 @@
-<div class="parent-cover">
-  <div class="child-cover">
+<div class="root">
+  <div class="card">
     <mat-card class="rideClass">
-
       <!-- username textfield -->
       <div class="auth-title">
-        <mat-card-title> Authentication </mat-card-title>
+        <mat-card-title> Login </mat-card-title>
       </div>
 
       <div class="general-cus">
-        <mat-form-field>
+        <mat-form-field class="mat-form-field">
           <mat-label>Email</mat-label>
           <!-- <input type="text" #name (keyup)="getSpecificValues(name.value)" matInput /> -->
           <input matInput #name (keyup.enter)="getSpecificValues(name.value)" placeholder="pat@example.com" [formControl]='email' required>
@@ -16,13 +15,11 @@
           <mat-icon matSuffix>email</mat-icon>
         </mat-form-field>
       </div>
-      <!-- username textfield -->
-
-      
+      <!-- username textfield -->  
 
       <!-- password textfield -->
       <div class="general-cus">
-        <mat-form-field>
+        <mat-form-field class="mat-form-field">
           <mat-label>Password</mat-label>
           <input matInput [type]="hide ? 'password' : 'text'" #pass (keyup)="getSpecificValues(pass.value)" />
           <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
@@ -33,12 +30,10 @@
       </div>
       <!-- password textfield -->
 
-
-
       <!-- btton -->
-      <div class="general-cus">
+      <div class="card-actions">
         <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="getValue(name.value,pass.value)" >Sign In</button>
+          <button mat-raised-button color="primary" (click)="login(name.value,pass.value)" >Sign In</button>
         </mat-card-actions>
       </div>
       <!-- btton -->

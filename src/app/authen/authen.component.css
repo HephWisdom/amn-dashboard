@@ -1,67 +1,51 @@
-.parent-cover {
-  width: 100%;
-  height: 100%;
-  background-color: black;
+.root {
+  height: 100vh;
+  background: url("../../assets/images/hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.child-cover {
+.card {
   width: 100%;
   height: 100%;
-  background-color: #12e193;
+  /* background-color: #12e193; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.auth-title{
-  justify-content: center;
-  display: flex;
-  padding: 3%;
+.mat-form-field {
+  width: 100%;
 }
 
-.general-cus{
-  justify-content: center;
-  display: flex;
-  padding: 0.9%;
+.auth-title {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.rideClass{
-  height: 30%;
-  width: 30%;
-  box-shadow: 10px 10px 5px grey;
+.general-cus {
+  display: flex;
+}
+
+.rideClass {
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+  box-shadow: 4px 5px 18px #52525273;
   border-radius: 10px;
 }
 
-/* On screens that are 992px */
-@media screen and (max-width: 992px) {
-  .child-cover {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .rideClass{
-    height: 30%;
-    width: 35%;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-  }
+.card-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+/* On screens that are 992px */
+/* @media screen and (max-width: 992px) { */
 
 /* On screens that are 600px or less*/
-@media screen and (max-width: 600px) {
-  .child-cover {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* @media screen and (max-width: 600px) {
 
-  .rideClass{
-    height: 35%;
-    width: 60%;
-    box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-  }
-}
+
+} */

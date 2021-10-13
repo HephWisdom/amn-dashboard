@@ -7,10 +7,10 @@ import { DashComponentComponent } from './dash-component/dash-component.componen
 
 
 const routes: Routes = [
-  { path: 'dashboard', redirectTo: 'Sign-In', pathMatch: 'full'},
+  { path: 'dashboard', redirectTo: 'dashboard/sign-in', pathMatch: 'full' },
   // { path: 'Sign-In', component: AuthenComponent },
-  // { path: 'dash', component: DashComponentComponent },
-  // { path: 'dashboard/home', component: NavComponentComponent },
+  { path: 'dashboard/sign-in', component: AuthenComponent },
+  { path: 'dashboard/home', component: NavComponentComponent },
 ];
 
 @NgModule({

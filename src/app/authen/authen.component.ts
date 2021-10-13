@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-authen',
   templateUrl: './authen.component.html',
@@ -8,7 +8,10 @@ import {FormControl, Validators} from '@angular/forms';
 })
 export class AuthenComponent implements OnInit {
   hide = true;
-  constructor() { }
+  isLoggedIn = false;
+  constructor(private router: Router ) {
+
+   }
 
   ngOnInit(): void {
   }
@@ -18,8 +21,9 @@ export class AuthenComponent implements OnInit {
   }
 
 
-  getValue(val:string, pass:any) {
-    console.log(val,pass)
+  login(val:string, pass:any) {
+    this.isLoggedIn = true;
+    this.router.navigate(['/dashboard/home'])
   }
 
   getSpecificValues(val:string) {
