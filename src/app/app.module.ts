@@ -19,6 +19,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CardComponent } from './card/card.component';
+import { HeaderComponent } from './header/header.component';
+import { DashDisplayComponent } from './dash-display/dash-display.component';
 
 
 
@@ -27,7 +30,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppComponent,
     AuthenComponent,
     NavComponentComponent,
-    DashComponentComponent
+    DashComponentComponent,
+    CardComponent,
+    HeaderComponent,
+    DashDisplayComponent
   ],
   imports: [
     BrowserModule,

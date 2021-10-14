@@ -23,7 +23,7 @@ export class AuthenComponent implements OnInit {
 
   login(val:string, pass:any) {
     this.isLoggedIn = true;
-    this.router.navigate(['/dashboard/home'])
+    this.router.navigate(['/dashboard'])
   }
 
   getSpecificValues(val:string) {
@@ -39,11 +39,6 @@ export class AuthenComponent implements OnInit {
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
-  // async signIn(email:string, password: string): Promise<void>{
-  //   //todo validate email
-  //   if(!validateEmail(email)) return
-  //   console.log('sig in');
-    
-  // }
+  
 
 }

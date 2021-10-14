@@ -1,0 +1,27 @@
+.my-card-content {
+    padding: 16px;
+  }
+ 
+ /*card.component.css*/
+  mat-card {
+     display: flex;
+     flex-direction: column;
+  }
+ 
+  .card-holder{
+    padding-left: 5%;
+  }
+  .example-card {
+    max-width: 300px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+ 
+  .parent-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }

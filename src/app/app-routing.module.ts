@@ -3,14 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthenComponent } from './authen/authen.component';
 import { NavComponentComponent } from './nav-component/nav-component.component';
 import { DashComponentComponent } from './dash-component/dash-component.component';
+import { DashDisplayComponent } from './dash-display/dash-display.component';
 
 
 
 const routes: Routes = [
-  { path: 'dashboard', redirectTo: 'dashboard/sign-in', pathMatch: 'full' },
-  // { path: 'Sign-In', component: AuthenComponent },
-  { path: 'dashboard/sign-in', component: AuthenComponent },
-  { path: 'dashboard/home', component: NavComponentComponent },
+  { path: '', component: AuthenComponent },
+  { path: 'dashboard', component: DashDisplayComponent },
 ];
 
 @NgModule({
